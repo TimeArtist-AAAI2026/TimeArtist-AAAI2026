@@ -79,7 +79,7 @@ bash ./stage2_512_align.sh
 
 ## Load the pre-trained parameters to run the instance
 
-We have uploaded the pre-trained parameters to [HuggingFace](https://huggingface.co/TimeArtist). You can download the above files and save them in the following directory.
+We have uploaded the pre-trained parameters to [HuggingFace](https://huggingface.co/TimeArtist/TimeArtist). You can download the above files and save them in the following directory.
 
 ```
 checkpoints
