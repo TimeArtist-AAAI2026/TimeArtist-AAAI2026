@@ -10,7 +10,9 @@
 
 
 This paper introduces TimeArtist, the first general-purpose Temporal-Visual Multimodal (TVM) model that aligns temporal fluctuations in time series with visual semantics. Unlike prior methods that convert time series into pseudo-images lacking semantic meaning, TimeArtist establishes a unified discrete representation space through a two-stage "warmup-align" paradigm:
+
 :triangular_flag_on_post: **Warmup Phase**: Self-supervised training of dual-autoencoders (for time series and images) and a shared quantizer on large-scale datasets.
+
 :triangular_flag_on_post: **Alignment Phase**: A projection module aligns temporal and visual representations in the latent space without paired data.
 
 ![alt text](pic/pic1.png)
