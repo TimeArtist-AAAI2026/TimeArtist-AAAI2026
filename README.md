@@ -10,18 +10,18 @@
 
 
 This paper introduces TimeArtist, the first general-purpose Temporal-Visual Multimodal (TVM) model that aligns temporal fluctuations in time series with visual semantics. Unlike prior methods that convert time series into pseudo-images lacking semantic meaning, TimeArtist establishes a unified discrete representation space through a two-stage "warmup-align" paradigm:
-1. Warmup Phase: Self-supervised training of dual-autoencoders (for time series and images) and a shared quantizer on large-scale datasets.
-2. Alignment Phase: A projection module aligns temporal and visual representations in the latent space without paired data.
+:triangular_flag_on_post: **Warmup Phase**: Self-supervised training of dual-autoencoders (for time series and images) and a shared quantizer on large-scale datasets.
+:triangular_flag_on_post: **Alignment Phase**: A projection module aligns temporal and visual representations in the latent space without paired data.
 
 ![alt text](pic/pic1.png)
 
 ## Key Innovations:
 
-:star1: **Bidirectional Conversion**: Enables bidirectional transformation between 1d time series and 2d images while preserving temporal patterns in the synthesis image (e.g., rendering temporal-styled images).
+:star2: **Bidirectional Conversion**: Enables bidirectional transformation between 1d time series and 2d images while preserving temporal patterns in the synthesis image (e.g., rendering temporal-styled images).
 
-:star1: **Multi Head Quantization (MHQ)**: Improves codebook utilization by modeling hierarchical representation (e.g., trends/seasonality in time series, semantics/pixels in images).
+:star2: **Multi Head Quantization (MHQ)**: Improves codebook utilization by modeling hierarchical representation (e.g., trends/seasonality in time series, semantics/pixels in images).
 
-:star1: **Zero-shot Forecasting and Classification**: Leverages pretrained vision models by reframing forecasting as image outpainting and classification as visual category, achieving state-of-the-art performance.
+:star2: **Zero-shot Forecasting and Classification**: Leverages pretrained vision models by reframing forecasting as image outpainting and classification as visual category, achieving state-of-the-art performance.
 
 ![alt text](pic/pic2.png)
 
